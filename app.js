@@ -5,7 +5,7 @@ const app = express();
 const mongoose = require('mongoose');
 
 const host='0.0.0.0';
-mongoose.connect("mongodb+srv://akshaygupta42:Coldblot70@cluster0.se5soo7.mongodb.net/?retryWrites=true&w=majority", { dbName: 'StudentInformationSystem' }).then('Connected database').catch(e => console.log(e));
+mongoose.connect("mongodb+srv://akshaygupta42:Coldblot%4070@cluster0.se5soo7.mongodb.net/?retryWrites=true&w=majority", { dbName: 'StudentInformationSystem' }).then('Connected database').catch(e => console.log(e));
 const schema = mongoose.Schema(
     {
         ID: Number,
