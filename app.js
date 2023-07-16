@@ -105,4 +105,4 @@ app.get('/InformationView', async (req, res) => {
 
     }) })
 });
-app.listen(process.env.PORT || 80, () => console.log('Connection Established'));
+app.listen(process.env.PORT || 80,host, () => console.log('Connection Established'));
