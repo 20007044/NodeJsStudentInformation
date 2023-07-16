@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Student's Information View'</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .top-bar {
+            display: flex;
+            width: 100%;
+            background: #242424;
+            height: 20%;
+            color: #ff8823;
+            align-items: center;
+        }
+
+        .top-bar h1 {
+            font-size: 4vw;
+        }
+        .view-table
+        {
+            display:flex;
+
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+        .view-table .row {
+            display: flex;
+            margin-top:5px;
+            width: 100%;
+            background-color: #d2fffe;
+            justify-content: center;
+        }
+        .view-table .column
+        {
+            display:flex;
+            width:100%;
+            justify-content:space-between;
+            border:0.5px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <h1>Student Information View</h1>
+    </div>
+    <div class="view-table">
+        <div class="row">
+            <div class="column">
+                <h2>ID</h2>
+                <hr />
+            </div>
+            <div class="column">
+                <h2>Name</h2>
+                <hr />
+            </div>
+            <div class="column">
+                <h2>Roll</h2>
+                <hr />
+            </div>
+            <div class="column">
+                <h2>Father</h2>
+                <hr />
+            </div>
+            <div class="column">
+                <h2>Address</h2>
+                <hr />
+            </div>
+            <div class="column">
+                <h2>Phone</h2>
+                <hr />
+            </div>
+            </div>
+            <%for(var i=0;i<rows;i++) {%>
+            <div class="row">
+             <div class="column">
+                <h2><%=data[0][i]%></h2>
+            </div>
+            <div class="column">
+                <h2><%=data[1][i]%></h2>
+            </div>
+            <div class="column">
+                <h2><%=data[2][i]%></h2>
+            </div>
+            <div class="column">
+                <h2><%=data[3][i]%></h2>
+            </div>
+            <div class="column">
+                <h2><%=data[4][i]%></h2>
+            </div>
+            <div class="column">
+                <h2><%=data[5][i]%></h2>
+            </div>
+
+            </div>
+            <%}%>
+    </div>
+ <script>
+let table = document.querySelector('.view-table');
+ 
+</script>
+</body>
+</html>
